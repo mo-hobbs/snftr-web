@@ -1,4 +1,8 @@
 import React from "react";
+<<<<<<< Updated upstream
+=======
+import { Container, Row } from "react-bootstrap";
+>>>>>>> Stashed changes
 
 function Footer() {
 return (

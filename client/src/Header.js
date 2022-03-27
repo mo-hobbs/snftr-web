@@ -1,15 +1,16 @@
 import React from "react";
 import { Navbar, NavDropdown, Container, Nav } from "react-bootstrap";
-import SNFTR_logo from './images/SNFTR_ico_wh85.png';
+
+import header_logo from './images/SNFTR-header-logo.png'
 
 
 function Header () {
   return (
-    <Navbar collapseOnSelect expand="lg" >
+    <Navbar collapseOnSelect expand="lg">
       <Container>
         <Navbar.Brand href="/">
           <img
-            src={SNFTR_logo}
+            src={header_logo}
             alt="SNFTR logo white snifter glass"
             className="nav-logo"
           />
