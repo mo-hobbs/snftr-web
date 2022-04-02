@@ -10,7 +10,7 @@ import Bookmarks from "./Bookmarks";
 import Contact from "./Contact";
 import Login from "./Login";
 
-function App() {
+function App({ analytics }) {
   function handleLogin() {
     console.log("Add function for login");
     // if (user) {
@@ -26,7 +26,7 @@ function App() {
         <Header />
         {/* <Header user={user} onLogout={handleLogout}/> */}
         <Switch>
-          {/* <Route path="/search">
+          <Route path="/search">
             <Search />
           </Route>
           <Route path="/bookmarks">
@@ -37,7 +37,7 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
-          </Route> */}
+          </Route>
           <Route exact path="/">
             <Home />
             {/* <h1>Page Count: {count}</h1> */}
