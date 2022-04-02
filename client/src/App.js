@@ -10,15 +10,15 @@ import Bookmarks from "./Bookmarks";
 import Contact from "./Contact";
 import Login from "./Login";
 
-function App({ analytics }) {
-  function handleLogin() {
-    console.log("Add function for login");
-    // if (user) {
-    //   return <WelcomePage user={user} />
-    // } else {
-    //   return <Login onLogin={setUser} user={user} />;
-    // }
-  }
+function App() {
+  // function handleLogin() {
+  //   console.log("Add function for login");
+  //   if (user) {
+  //     return <WelcomePage user={user} />
+  //   } else {
+  //     return <Login onLogin={setUser} user={user} />;
+  //   }
+  // }
 
   return (
     <BrowserRouter>
