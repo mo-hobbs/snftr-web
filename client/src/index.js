@@ -8,6 +8,11 @@ import reportWebVitals from './reportWebVitals';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
+import { getDatabase } from "firebase/database";
+import firebase from 'firebase/compat/app';
+import * as firebaseui from 'firebaseui';
+import 'firebaseui/dist/firebaseui.css';
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -16,6 +21,7 @@ import { getAuth } from "firebase/auth";
 const firebaseConfig = {
   apiKey: "AIzaSyAlYt8lI_gWMyP0OykSDY2CG5cL_ZXRv0Q",
   authDomain: "snftr-c99d4.firebaseapp.com",
+  databaseURL: "https://snftr-c99d4-default-rtdb.firebaseio.com",
   projectId: "snftr-c99d4",
   storageBucket: "snftr-c99d4.appspot.com",
   messagingSenderId: "167318157874",
@@ -27,10 +33,15 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth = getAuth(app);
+const database = getDatabase();
+
+
+
+console.log(database);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App analytics={analytics} auth={auth}/>
+    <App analytics={analytics} auth={auth} database={database} />
   </React.StrictMode>,
   document.getElementById('root')
 );
